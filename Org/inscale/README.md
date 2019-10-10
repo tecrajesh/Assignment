@@ -24,7 +24,7 @@ Mockup
 The UI look and feel is left to the candidate, use your own taste and make it as beautiful as you can. The list should show in some kind of Table.
 The active status should be in the green palette. The inactive status should be in the red palette. Here is a basic example mockup:
  
- 
+ ![](inscale-assignment.gif)
 
 
 
@@ -46,6 +46,7 @@ Example of campaign array that can be passed
 {"id":8,"name":"Rhyzio","startDate":"10/13/2017","endDate":"1/25/2018"," Budget":272552},
 {"id":9,"name":"Zoomcast","startDate":"9/6/2017","endDate":"11/10/2017", "Budget":301919},
 {"id":10,"name":"Realbridge","startDate":"3/5/2018","endDate":"10/2/2017 ","Budget":505602}]
+
 
 
 
