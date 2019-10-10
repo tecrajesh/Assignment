@@ -1,0 +1,105 @@
+ 
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+
+/**
+ * Tables
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%; }
+
+thead th {
+  border-right: 2px solid white;
+  background: #0e539a; 
+  color: white;
+}
+
+tfoot th {
+  border-top: 2px solid #dedede; }
+
+td {
+  border-bottom: 1px solid #dedede; }
+
+th,
+td {
+  text-align: left;
+  padding: .5rem; }
+
+caption {
+  padding: 1rem 0;
+  caption-side: bottom;
+  color: #ababab; }
+
+.striped-table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8; }
+
+.contain-table {
+  overflow-x: auto; }
+
+@media (min-width: 600px) {
+  .contain-table {
+    width: 100%; } }
+
+.searchInput {
+  width: 230px;
+  height: 30px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+  border: 1px solid #74b928;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.options {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.results {
+  margin: 50px;
+  height: 500px;
+  overflow: auto;
+}
+
+i.active {
+  color: green;
+  margin-right: 8px;
+}
+
+i.inactive {
+  color: red;
+  margin-right: 8px;
+}
