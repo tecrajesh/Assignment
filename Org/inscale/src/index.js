@@ -13,7 +13,7 @@ var metaInfo = {
         { "id": 7, "name": "Blogtag", "startDate": "6/27/2017", "endDate": "1/15/2018", "Budget": 109078 },
         { "id": 8, "name": "Rhyzio", "startDate": "10/13/2017", "endDate": "1/25/2020", "Budget": 272552 },
         { "id": 9, "name": "Zoomcast", "startDate": "9/6/2017", "endDate": "11/10/2017", "Budget": 301919 },
-        { "id": 10, "name": "Realbridge", "startDate": "3/5/2018", "endDate": "10/2/2017", "Budget": 505602111111 }]
+        { "id": 10, "name": "Realbridge", "startDate": "3/5/2017", "endDate": "10/2/2018", "Budget": 505602111111 }]
 
     , headers: ["Name", "Start Date", "End Date", "Active", "Budget"],
     columns: ["name", "startDate", "endDate", "active", "Budget"],

@@ -76,10 +76,12 @@ class App extends Component {
 		});
 	}
 
+	getDate = (dateId) => { const date = document.getElementById(dateId).value; return date && new Date(date) }
+
 	handleDate = (e) => {
-		var stDate = new Date(document.getElementById("startDate").value);
-		var enDate = new Date(document.getElementById("endDate").value);
-		var compDate = enDate && stDate && enDate - stDate;
+		var stDate = this.getDate("startDate");
+		var endDate = this.getDate("endDate");
+		var compDate = endDate && stDate && endDate - stDate;
 
 		if (compDate < 0) {  // endDate should be less than start date
 			alert("To Date cannot be smaller than From Date");
@@ -99,10 +101,16 @@ class App extends Component {
 			// based on the search terms
 			newLists = currentLists.filter(item => {
 				// change current item to lowercase
-				const lc = new Date(item.startDate);
+				const sc = new Date(item.startDate);
+				const ec = new Date(item.endDate);
 				// change search term to lowercase
-				const filter = new Date(e.target.value);
-				return e.currentTarget.id === "startDate" ? lc > filter : lc < filter;
+
+				const startCtn = sc > stDate;
+				const endCtn = ec < endDate;
+				if (stDate && endDate) {
+					return startCtn && endCtn
+				}
+				return startCtn && stDate || endCtn && endDate
 			});
 		} else {
 			// If the search bar is empty, set newList to original task list
