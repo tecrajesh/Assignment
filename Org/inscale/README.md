@@ -49,5 +49,24 @@ Example of campaign array that can be passed
 
 
 
+How to run this : 
+
+1. Git checkout --> git checkout git@github.com:tecrajesh/Assignment.git // use SSH options
+2. Navigate to ../ Assignment/Org/inscale project folder
+3. run npm install 
+4. After successful completion "npm run"
+5. use addCampaigns() to add Campaigns from console.
+
+
+
+
+
+
+
+
+
+
+
+
 
 

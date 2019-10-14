@@ -21,7 +21,7 @@ var metaInfo = {
 }
 ReactDOM.render(<App metaInfo={metaInfo} />, document.getElementById('root'))
 
-window.addObj = (dynamicData) => {
+window.addCampaigns = (dynamicData) => {
     ReactDOM.unmountComponentAtNode(document.getElementById('root'));
     metaInfo.data = [...metaInfo.data, ...dynamicData];
     ReactDOM.render(<App metaInfo={metaInfo} />, document.getElementById('root'))
