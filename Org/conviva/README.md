@@ -39,3 +39,5 @@ o Relational database (Preferred) or no SQL
  Modular and decoupled code
  Logging wherever applicable
  Solution should be hosted in GitHub or similar platform
+
+![](conviva.gif)
